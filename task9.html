@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .outer-box {
+    background-color: #A22A57; /* Dark maroon */
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .inner-box {
+    background-color: #752041; /* Lighter shade of dark maroon */
+    padding: 50px;
+    margin: 10%;
+    border: 80px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    width: 600px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    color: #ffffff; /* Dark maroon */
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  select,
+  textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: white;
+    color: #8B0000; /* Dark maroon */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  </style>
+</head>
+<body>
+  <div class="outer-box">
+    <div class="inner-box">
+      <h2>Registration Form</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+
+        <label for="language">Language:</label>
+        <select id="language">
+          <option value="">Select a language</option>
+          <option value="english">English</option>
+          <option value="spanish">Spanish</option>
+          <option value="french">French</option>
+          <!-- Add other language options here -->
+        </select>
+
+        <label for="zipcode">Zip Code:</label>
+        <input type="text" id="zipcode" placeholder="Enter your zip code" required>
+
+        <label for="about">About:</label>
+        <textarea id="about" placeholder="Tell us about yourself"></textarea>
+
+        <input type="submit" value="Register" style="font-weight: bold;">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
